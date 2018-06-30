@@ -1,0 +1,16 @@
+{
+    "name": "woonk_bot",
+    "version": "1.0.0",
+    "description": "Helps users with theirs doubts and controll the behaviour of the members in the group",
+    "main": "woonk_bot.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Jacob Nuño - @jacobnuno",
+    "license": "ISC",
+    "dependencies": {
+        "dotenv": "^6.0.0",
+        "telebot": "^1.2.6",
+        "url-regex": "^4.1.1"
+    }
+}
