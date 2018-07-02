@@ -7,7 +7,7 @@
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "Jacob Nuño - @jacobnuno",
-    "license": "ISC",
+    "license": "MIT",
     "dependencies": {
         "dotenv": "^6.0.0",
         "telebot": "^1.2.6",
