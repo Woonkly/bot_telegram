@@ -10,6 +10,7 @@
     "license": "MIT",
     "dependencies": {
         "dotenv": "^6.0.0",
+        "i18n": "^0.8.3",
         "telebot": "^1.2.6",
         "url-regex": "^4.1.1"
     }
