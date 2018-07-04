@@ -12,7 +12,7 @@ var i18n = require("i18n")
 
 i18n.configure({
     locales:['en_US', 'es_MX'],
-    directory: __dirname + '/locals',
+    directory: __dirname + '/locales',
     defaultLocale: 'en_US',
     register: global
 })
@@ -60,12 +60,12 @@ bot.on('newChatMembers', function (data) {
 
 // Log every text message
 bot.on('text', function (data) {
-    // es 0 -> groserias
-    // es 1 -> /price
-    // es 2 -> /howToBuy
-    // en 0 -> insults
-    // es 1 -> /price
-    // es 2 -> /howToBuy
+    // data_es 0 -> groserias
+    // data_es 1 -> /price
+    // data_es 2 -> /howToBuy
+    // data_en 0 -> insults
+    // data_en 1 -> /price
+    // data_en 2 -> /howToBuy
 
     let directory = 'data_en'
     let index = null
