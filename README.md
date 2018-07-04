@@ -54,7 +54,6 @@ Creating "/myNewCommand"...
 * First you need to modify the json file.
 ```json
 {
-  //UPDATE
   "myNewCommand" : "This is my new command!",
 
   "info" :"Info message",
@@ -84,9 +83,6 @@ You can see all the warned users in the _warnedUsers.json_ file. Here you can fi
 
 ```json
 [
-
-//{id: User´s ID, times: number of warnings},
-
   {"id" : "12345678", "times" : 1  },
   {"id" : "23456781", "times" : 2  },
   {"id" : "34567812", "times" : 1  }
@@ -102,20 +98,17 @@ The list with the key words is essential in order to make the bot work, you need
 {
     "data_en": {
 
-        //Insults, curse words
         "ofensive_words": [
             "offensive word 1",
             "offensive word 2",
             "offensive word 3"
         ],
 
-        //Words that trigger the /price command
         "price_words": [
             "price",
             "costs"
         ],
 
-        //Words that trigger the /howToBuy command
         "buy_words": [
             "invest",
             "acquire"
@@ -124,20 +117,17 @@ The list with the key words is essential in order to make the bot work, you need
 
     "data_es": {
 
-        //Insults, curse words
         "ofensive_words": [
             "insulto 1",
             "insulto 2",
             "insulto 3"
         ],
 
-        //Words that trigger the /price command
         "price_words": [
             "precio",
             "costo"
         ],
 
-        //Words that trigger the /howToBuy command
         "buy_words": [
             "invertir",
             "adquirir"
