@@ -9,6 +9,7 @@ const bot = new TeleBot(process.env.TOKEN_TELEGRAM_API)
 const urlRegex = require('url-regex')
 const fs = require('fs')
 var i18n = require("i18n")
+const request = require('request')
 
 i18n.configure({
     locales:['en_US', 'es_MX'],
@@ -33,12 +34,6 @@ bot.on('/rules', function (data) {
 bot.on('/help', function (data) {
 
     return bot.sendMessage(data.chat.id,  __('help'))
-})
-
-// On command "woonkCost"
-bot.on('/price', function (data) {
-
-    return bot.sendMessage(data.chat.id,  __('price'))
 })
 
 // On command "howToBuy"
@@ -206,7 +201,14 @@ function warnUser(data, fault) {
 
 function sendFAQ(data, typeofFAQ) {
     if(typeofFAQ === 1) {
-        return bot.sendMessage(data.chat.id, __('price'))
+        request('https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=MXN,USD,EUR', { json: true }, (err, res, body) => {
+            if (err) { return console.log(err) }
+            if(body.USD) {
+                return bot.sendMessage(data.chat.id,  __('price.especific', '30 %', body.USD, (body.USD/50000).toFixed(5), body.EUR, (body.EUR/50000).toFixed(5), body.MXN, (body.MXN/50000).toFixed(5)))
+            } else {
+                return bot.sendMessage(data.chat.id,  __('price'))
+            }
+        })
     } else {
         return bot.sendMessage(data.chat.id, __('howToBuy'))
     }
