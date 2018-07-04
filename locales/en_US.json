@@ -1,0 +1,14 @@
+{
+	"info": "📡 Woonkly is the first platform that pays 💰 people to view and share digital content (video, image and text) from different platforms.",
+	"rules": "• No spam \n• No insults \n• Do not talk about none related Woonkly topics \n• No talking about buying or selling signals \n• No adult content \n• Always treat with respect \n• Use common sense \nLack of knowledge of these rules does not exempt you from compliance",
+	"help": "Hello my name is Woonkzalo and I'm here to help you! \n\n My available commands are: \n\n/info - what is Woonkly \n/rules - group rules \n/price - view current woonk price \n/howToBuy - how to buy Woonks \n/help - command list",
+	"price": "Current Woonk price: \n 1 ETH = 50,000 WNKs + the current bonus",
+	"price.especific": "Current Woonk price: \n 1 ETH = 50,000 WNKs + the current bonus (%s) \n 1 ETH = %s USD, thus 1 WNK = %s USD \n 1 ETH = %s EUR, thus 1 WNK = %s EUR \n 1 ETH = %s MXN, thus 1 WNK = %s MXN",
+	"howToBuy": "Buying Woonks is very simple! \n\nYou have to follow these 10 simple steps: \n\n1.- Go to Woonkly's official website: https://woonkly.com \n2.- Click on the'Buy' button ('If you are already registered, otherwise fill out the private sale form'). \n3.- Log in to your Woonkly account. \n4.- Select the currency you want to buy with. \n5.-  Enter the amount of Woonks you'd like to buy. \n6.- Click on the'BUY' button. \n7.- In case it's Ethereum, don't send from exchange houses and put the gas limit at 120,000; and Gas Price at 20 GWEI. \n8.- Envía la cantidad exacta que pusiste (en caso de ser ETH debes enviar desde el wallet que quieres recibir los Woonks) y autoriza la transacción. \n9.- Now that you've done this, enter the'+' button in the address field of the wallet where you'll save your Woonks. \n10.- Ready! You already bought Woonks.",
+	"newChatMembers.username": "Welcome to Woonkly @%s! do not forget to follow the /rules",
+	"newChatMembers.first_name": "Welcome to Woonkly %s! do not forget to follow the /rules",
+	"replyAndDelete.username": "Posting %s is forbidden, @%s! Please, avoid us the shame of banning you. \n%s/2 warnings.",
+	"replyAndDelete.first_name": "Posting %s is forbidden, %s! Please, avoid us the shame of banning you. \n%s/2 warnings.",
+	"spam": "spam",
+	"insult": "insults"
+}
