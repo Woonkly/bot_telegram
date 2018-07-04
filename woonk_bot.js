@@ -68,6 +68,7 @@ bot.on('text', function (data) {
     // es 2 -> /howToBuy
 
     let directory = 'data_en'
+    let index = null
 
     if(data.chat.id == process.env.ES_CHAT_ID) {
         i18n.setLocale('es_MX');
@@ -79,7 +80,7 @@ bot.on('text', function (data) {
             warnUser(data, __('spam'))
         }
     }
-    let index = null
+
     for (var i = 0; i < 3; i++) {
         if(checkContent(data, i, directory)) {
             index = i
@@ -107,13 +108,12 @@ bot.start()
 // checks for content forbidden
 function checkContent(data, typeofContent, directory) {
     let text = data.text.toLowerCase()
-    text = text.split(' ')
     var dataJson = fs.readFileSync('data.json')
     var list = JSON.parse(dataJson)
     var array = Object.keys(list[directory]).map(function(k) { return list[directory][k] })
     try {
-        for (var i = 0, len = text.length; i < len; i++) {
-            if(array[typeofContent].indexOf(text[i]) != -1) {
+        for (var i = 0, len = array[typeofContent].length; i < len; i++) {
+            if(text.indexOf(array[typeofContent][i]) != -1) {
                 return true
             }
         }

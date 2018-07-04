@@ -1,13 +1,13 @@
 {
     "info": "📡 Woonkly es la primera plataforma que paga 💰 a las personas por ver y compartir contenido digital (vídeo, imagen y texto) de diferentes plataformas.",
     "rules": "• No spam \n• No groserías \n• No hablar sobre otras ICO \n• No hablar de señales de compra o venta \n• No contenido para adultos \n• Siempre tratarse con respeto \n• Usar el sentido común \nEl desconocimiento de estas reglas no te exenta de su cumplimiento",
-	"help": "¡Hola mi nombre es Woonkzalo y estoy aquí para ayudarte! \n\n Mis comandos disponibles son: \n\n/info - que es Woonkly \n/rules - reglas del grupo \n/price - ver precio actual del woonk \n/howToBuy - pasos para adquirir woonks \n/help - lista de comandos",
-	"price": "Precio actual del woonk: \n 1 ETH = 50,000 WNKs + el bonus actual",
-	"howToBuy": "¡Comprar woonks es muy sencillo! \n\nTienes que seguir éstos 10 sencillos pasos: \n\n1.-  Accede a sitio web oficial de Woonkly: https://woonkly.com \n2.- Da click en el botón 'Comprar'. ( Si ya estás registrado, de lo contrario llena el formulario de venta privada ). \n3.- Inicia sesión en tu cuenta de Woonkly. \n4.- Selecciona la moneda con la que quieras comprar. \n5.- Ingresa la cantidad de Woonks que quisieras comprar. \n6.- Da click al botón 'COMPRAR'. \n7.- En caso de que sea Ethereum, no envíes desde casas de cambio y pon el gas limit de 120,000; y Gas Price a 20 GWEI. \n8.- Envía la cantidad exacta que pusiste (en caso de ser ETH debes enviar desde el wallet que quieres recibir los Woonks) y autoriza la transacción. \n9.- Ya que haces esto, ingresa en el botón '+' el Address de la wallet donde guardaras tus Woonks. \n10.- ¡Listo! Ya compraste Woonks.",
-	"newChatMembers.username": "¡Bienvenido a Woonkly @%s! no olvides seguir las /rules",
+    "help": "¡Hola mi nombre es Woonkzalo y estoy aquí para ayudarte! \n\n Mis comandos disponibles son: \n\n/info - que es Woonkly \n/rules - reglas del grupo \n/price - ver precio actual del woonk \n/howToBuy - pasos para adquirir woonks \n/help - lista de comandos",
+    "price": "Precio actual del woonk: \n 1 ETH = 50,000 WNKs + el bonus actual",
+    "howToBuy": "¡Comprar woonks es muy sencillo! \n\nTienes que seguir éstos 10 sencillos pasos: \n\n1.-  Accede a sitio web oficial de Woonkly: https://woonkly.com \n2.- Da click en el botón 'Comprar'. ( Si ya estás registrado, de lo contrario llena el formulario de venta privada ). \n3.- Inicia sesión en tu cuenta de Woonkly. \n4.- Selecciona la moneda con la que quieras comprar. \n5.- Ingresa la cantidad de Woonks que quisieras comprar. \n6.- Da click al botón 'COMPRAR'. \n7.- En caso de que sea Ethereum, no envíes desde casas de cambio y pon el gas limit de 120,000; y Gas Price a 20 GWEI. \n8.- Envía la cantidad exacta que pusiste (en caso de ser ETH debes enviar desde el wallet que quieres recibir los Woonks) y autoriza la transacción. \n9.- Ya que haces esto, ingresa en el botón '+' el Address de la wallet donde guardaras tus Woonks. \n10.- ¡Listo! Ya compraste Woonks.",
+    "newChatMembers.username": "¡Bienvenido a Woonkly @%s! no olvides seguir las /rules",
     "newChatMembers.first_name": "¡Bienvenido a Woonkly %s! no olvides seguir las /rules",
-	"replyAndDelete.username": "¡Publicar %s está prohibido, @%s! Por favor, evítanos la pena de bannearte. \n%s/2 advertencias.",
-	"replyAndDelete.first_name": "¡Publicar %s está prohibido, %s! Por favor, evítanos la pena de bannearte. \n%s/2 advertencias.",
-	"spam": "spam",
-	"insult": "groserías"
+    "replyAndDelete.username": "¡Publicar %s está prohibido, @%s! Por favor, evítanos la pena de bannearte. \n%s/2 advertencias.",
+    "replyAndDelete.first_name": "¡Publicar %s está prohibido, %s! Por favor, evítanos la pena de bannearte. \n%s/2 advertencias.",
+    "spam": "spam",
+    "insult": "groserías"
 }
