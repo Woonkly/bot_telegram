@@ -119,7 +119,7 @@ function regexWoonkly(text) {
     let pattYoutube = new RegExp('.*(youtube).*')
     let array = ['https://t.me/joinchat/hixsxhc6dxsm2c2zxs3wkw', 'https://t.me/joinchat/hu8281cbxcndycg10wzklw']
     text = text.toLowerCase()
-    let matches = text.match(urlRegex({exact: true, strict: false}))
+    let matches = text.match(urlRegex({strict: false}))
     if(matches != null) {
         try {
             for (var i = 0, len = matches.length; i < len; i++) {
