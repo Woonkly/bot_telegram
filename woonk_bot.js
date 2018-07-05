@@ -10,6 +10,7 @@ const urlRegex = require('url-regex')
 const fs = require('fs')
 var i18n = require("i18n")
 const request = require('request')
+var directory = 'data_en'
 
 i18n.configure({
     locales:['en_US', 'es_MX'],
@@ -20,30 +21,29 @@ i18n.configure({
 
 // On command "play"
 bot.on('/info', function (data) {
+    getLanguage(data)
 
     return bot.sendMessage(data.chat.id, __('info'))
 })
 
 // On command "rules"
 bot.on('/rules', function (data) {
+    getLanguage(data)
 
     return bot.sendMessage(data.chat.id,  __('rules'))
 })
 
 // On command "help"
 bot.on('/help', function (data) {
+    getLanguage(data)
 
     return bot.sendMessage(data.chat.id,  __('help'))
 })
 
-// On command "howToBuy"
-bot.on('/howToBuy', function (data) {
-
-    return bot.sendMessage(data.chat.id, __('howToBuy'))
-})
-
 // detect if someone just joined
 bot.on('newChatMembers', function (data) {
+    getLanguage(data)
+
     if (data.new_chat_member != undefined) {
         if(data.new_chat_member.username != undefined) {
             bot.sendMessage(data.chat.id, __('newChatMembers.username', data.new_chat_member.username))
@@ -62,17 +62,13 @@ bot.on('text', function (data) {
     // data_en 1 -> /price
     // data_en 2 -> /howToBuy
 
-    let directory = 'data_en'
     let index = null
-
-    if(data.chat.id == process.env.ES_CHAT_ID) {
-        i18n.setLocale('es_MX');
-        directory = 'data_es'
-    }
+    getLanguage(data)
 
     if(data.entities != undefined) {
         if(regexWoonkly(data.text)) {
             warnUser(data, __('spam'))
+            return
         }
     }
 
@@ -211,5 +207,15 @@ function sendFAQ(data, typeofFAQ) {
         })
     } else {
         return bot.sendMessage(data.chat.id, __('howToBuy'))
+    }
+}
+
+function getLanguage(data) {
+    if(data.chat.id == process.env.ES_CHAT_ID) {
+        i18n.setLocale('es_MX');
+        directory = 'data_es'
+    } else {
+        i18n.setLocale('en_US');
+        directory = 'data_en'
     }
 }
