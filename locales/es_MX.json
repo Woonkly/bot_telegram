@@ -10,5 +10,7 @@
     "replyAndDelete.username": "¡Publicar %s está prohibido, @%s! Por favor, evítanos la pena de bannearte. \n%s/2 advertencias.",
     "replyAndDelete.first_name": "¡Publicar %s está prohibido, %s! Por favor, evítanos la pena de bannearte. \n%s/2 advertencias.",
     "spam": "spam",
-    "insult": "groserías"
+    "insult": "groserías",
+    "forwardMessage.username": "@%s, reenviar mensajes no está permitido, lo siento.",
+  	"forwardMessage.first_name": "%s, reenviar mensajes no está permitido, lo siento."
 }
