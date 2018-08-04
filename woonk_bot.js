@@ -11,6 +11,7 @@ const fs = require('fs')
 var i18n = require("i18n")
 const request = require('request')
 var directory = 'data_en'
+var allowSend = true
 
 i18n.configure({
     locales:['en_US', 'es_MX'],
@@ -22,7 +23,7 @@ i18n.configure({
 // On command "play"
 bot.on('/info', function (data) {
     getLanguage(data)
-
+    bot.sendPhoto(data.chat.id, "https://woonkly.com/img/InfograficoEsp.png")
     return bot.sendMessage(data.chat.id, __('info'))
 })
 
@@ -206,7 +207,11 @@ function sendFAQ(data, typeofFAQ) {
             }
         })
     } else {
-        return bot.sendMessage(data.chat.id, __('howToBuy'))
+        if(allowSend) {
+          allowSend = false
+          changeStatus()
+          return bot.sendMessage(data.chat.id, __('howToBuy'))
+        }
     }
 }
 
@@ -218,4 +223,10 @@ function getLanguage(data) {
         i18n.setLocale('en_US');
         directory = 'data_en'
     }
+}
+
+function changeStatus () {
+  setTimeout(function(){
+    allowSend = true
+  }, 120000)
 }
