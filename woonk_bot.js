@@ -22,7 +22,7 @@ i18n.configure({
 // On command "play"
 bot.on('/info', function (data) {
     getLanguage(data)
-
+    bot.sendPhoto(data.chat.id, "https://woonkly.com/img/InfograficoEsp.png")
     return bot.sendMessage(data.chat.id, __('info'))
 })
 
