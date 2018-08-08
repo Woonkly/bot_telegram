@@ -54,6 +54,24 @@ bot.on('newChatMembers', function (data) {
     }
 })
 
+bot.on('forward', function (data) {
+  console.log('forwardMessage')
+  if(data.from.username != undefined) {
+    bot.sendMessage(data.chat.id, __('forwardMessage.username', data.from.username), { reply: data.message_id }).then(d => {
+      return
+    })
+  } else {
+    bot.sendMessage(data.chat.id, __('forwardMessage.first_name', data.from.first_name), { reply: data.message_id }).then(d => {
+        return
+    })
+  }
+
+  bot.deleteMessage(data.chat.id, data.message_id).then(data => {
+    return
+  })
+  return
+})
+
 // Log every text message
 bot.on('text', function (data) {
     // data_es 0 -> groserias
