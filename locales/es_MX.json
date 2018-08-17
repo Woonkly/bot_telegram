@@ -12,5 +12,6 @@
     "spam": "spam",
     "insult": "groserías",
     "forwardMessage.username": "@%s, reenviar mensajes no está permitido, lo siento.",
-  	"forwardMessage.first_name": "%s, reenviar mensajes no está permitido, lo siento."
+  	"forwardMessage.first_name": "%s, reenviar mensajes no está permitido, lo siento.",
+    "link-info": "https://woonkly.com/img/InfograficoEsp.png"
 }

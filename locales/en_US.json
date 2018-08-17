@@ -11,6 +11,7 @@
 	"replyAndDelete.first_name": "Posting %s is forbidden, %s! Please, avoid us the shame of banning you. \n%s/2 warnings.",
 	"spam": "spam",
 	"insult": "insults",
-  "forwardMessage.username": "@%s, forwarding messages is not allowed, sorry.",
-	"forwardMessage.first_name": "%s, forwarding messages is not allowed, sorry."
+    "forwardMessage.username": "@%s, forwarding messages is not allowed, sorry.",
+	"forwardMessage.first_name": "%s, forwarding messages is not allowed, sorry.",
+	"link-info": "https://woonkly.com/img/InfograficoIngles.png"
 }
