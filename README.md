@@ -1,5 +1,5 @@
 # _Woonkzalo_ Telegram Bot
-[![Woonkly](https://woonkly.com/img/powered_woonkly.png)](https://woonkly.com)
+[![Woonkly](https://woonkly.com/img/email-assets/powered-by.png)](https://woonkly.com)
 
 _Woonkzalo_ is a Telegram bot that answers the supergroup´s users their questions and also helps to mantain the order by removing conflicting members.
 
